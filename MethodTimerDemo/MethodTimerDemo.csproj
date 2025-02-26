@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fody" Version="6.9.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MethodTimer.Fody" Version="3.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AssemblyWithInterceptorAndFormatting">
+      <HintPath>..\..\..\Study\MethodTimer\AssemblyWithInterceptorAndFormatting\bin\Debug\net6\AssemblyWithInterceptorAndFormatting.dll</HintPath>
+    </Reference>
+    <Reference Include="MethodTimer">
+      <HintPath>..\..\..\Study\MethodTimer\AssemblyWithInterceptorAndFormatting\bin\Debug\net6\MethodTimer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
